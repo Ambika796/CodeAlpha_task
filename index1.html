@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GalleryX - Premium Image Gallery</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+    <h1>GalleryX</h1>
+    <p>Discover Stunning Visual Experiences</p>
+
+    <div class="controls">
+        <input type="text" id="search" placeholder="Search images...">
+        <button id="themeToggle">🌙</button>
+    </div>
+</header>
+
+<!-- STATS -->
+<section class="stats">
+    <div>Images: <span id="imgCount">0</span></div>
+    <div>Favorites: <span id="favCount">0</span></div>
+</section>
+
+<!-- FILTERS -->
+<section class="filters">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="nature">Nature</button>
+    <button class="filter" data-filter="tech">Tech</button>
+    <button class="filter" data-filter="animals">Animals</button>
+    <button class="filter" data-filter="city">City</button>
+    <button class="filter" data-filter="favorites">❤️ Favorites</button>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+
+    <div class="card nature" data-title="Mountain View">
+        <img src="https://picsum.photos/id/10/600/400">
+        <div class="overlay"><h3>Mountain View</h3><button class="fav">❤</button></div>
+    </div>
+
+    <div class="card tech" data-title="Laptop Setup">
+        <img src="https://picsum.photos/id/180/600/400">
+        <div class="overlay"><h3>Laptop Setup</h3><button class="fav">❤</button></div>
+    </div>
+
+    <div class="card animals" data-title="Tiger Closeup">
+        <img src="https://picsum.photos/id/237/600/400">
+        <div class="overlay"><h3>Tiger Closeup</h3><button class="fav">❤</button></div>
+    </div>
+
+    <div class="card city" data-title="City Night Lights">
+        <img src="https://picsum.photos/id/1011/600/400">
+        <div class="overlay"><h3>City Night Lights</h3><button class="fav">❤</button></div>
+    </div>
+
+    <div class="card nature" data-title="Forest Path">
+        <img src="https://picsum.photos/id/1040/600/400">
+        <div class="overlay"><h3>Forest Path</h3><button class="fav">❤</button></div>
+    </div>
+
+    <div class="card tech" data-title="Technology Desk">
+        <img src="https://picsum.photos/id/0/600/400">
+        <div class="overlay"><h3>Technology Desk</h3><button class="fav">❤</button></div>
+    </div>
+
+    <div class="card animals" data-title="Cute Dog">
+        <img src="https://picsum.photos/id/433/600/400">
+        <div class="overlay"><h3>Cute Dog</h3><button class="fav">❤</button></div>
+    </div>
+
+    <div class="card city" data-title="Modern Buildings">
+        <img src="https://picsum.photos/id/1015/600/400">
+        <div class="overlay"><h3>Modern Buildings</h3><button class="fav">❤</button></div>
+    </div>
+
+    <div class="card nature" data-title="Sunset Beach">
+        <img src="https://picsum.photos/id/1016/600/400">
+        <div class="overlay"><h3>Sunset Beach</h3><button class="fav">❤</button></div>
+    </div>
+
+    <div class="card tech" data-title="AI Robot Concept">
+        <img src="https://picsum.photos/id/96/600/400">
+        <div class="overlay"><h3>AI Robot Concept</h3><button class="fav">❤</button></div>
+    </div>
+
+    <div class="card animals" data-title="Wild Horse">
+        <img src="https://picsum.photos/id/219/600/400">
+        <div class="overlay"><h3>Wild Horse</h3><button class="fav">❤</button></div>
+    </div>
+
+    <div class="card city" data-title="Skyline View">
+        <img src="https://picsum.photos/id/1031/600/400">
+        <div class="overlay"><h3>Skyline View</h3><button class="fav">❤</button></div>
+    </div>
+
+</section>
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightboxImg">
+    <div class="nav">
+        <button id="prev">⬅</button>
+        <button id="next">➡</button>
+    </div>
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
