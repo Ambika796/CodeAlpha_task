@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Calculator</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="calculator">
+
+            <div class="top-bar">
+                <h2>Smart Calculator</h2>
+
+                <button id="themeBtn">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+
+            <div class="clock" id="clock"></div>
+
+            <input type="text" id="display" readonly>
+
+            <div class="buttons">
+
+                <button class="operator clear">C</button>
+                <button class="operator delete">⌫</button>
+                <button class="operator">%</button>
+                <button class="operator">/</button>
+
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operator">*</button>
+
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="operator">-</button>
+
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="operator">+</button>
+
+                <button>0</button>
+                <button>.</button>
+                <button id="equals">=</button>
+
+            </div>
+
+        </div>
+
+        <div class="history-panel">
+            <h3>History</h3>
+            <ul id="historyList"></ul>
+
+            <button id="clearHistory">
+                Clear History
+            </button>
+        </div>
+
+    </div>
+
+<script src="script2.js"></script>
+
+</body>
+</html>
